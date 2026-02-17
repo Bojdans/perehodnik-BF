@@ -1,0 +1,7 @@
+services:
+  tg-proxy-bot:
+    build: .
+    container_name: tg-proxy-bot
+    restart: unless-stopped
+    env_file:
+      - .env
